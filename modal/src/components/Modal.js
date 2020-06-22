@@ -23,14 +23,15 @@ const ModalArea = styled.div`
 `;
 
 function Modal(props) {
-  const handleBackgroundClick = () => {
-    props.setVisible(false);
-  };
+  // const handleBackgroundClick = () => {
+  //   props.setVisible(false);
+  // };
 
   return (
     <>
       {props.visible && (
-        <ModalBackground onClick={handleBackgroundClick}>
+        // <ModalBackground onClick={handleBackgroundClick}>
+        <ModalBackground>
           <ModalArea>{props.children}</ModalArea>
         </ModalBackground>
       )}
